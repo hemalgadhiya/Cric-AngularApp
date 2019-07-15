@@ -1,0 +1,27 @@
+<nav style="text-align: center"> 
+    
+    <label for="country"> Country 
+    <select [(ngModel)]="Country" (ngModelChange)="filterMatches($event)" > 
+        <option>Full Schedule</option>
+        <option *ngFor="let team of teams" [ngValue]="team">{{team}}</option>
+    </select>
+
+</label>
+  </nav>
+
+  <br><br>
+<table id="sch" align="center">
+    <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Fixture</th>
+        <th>Match Format</th>
+    </tr>
+    
+    <tr *ngFor="let match of filterd_matches">
+        <td>{{match['dateTimeGMT'] | dateformate}}</td>
+        <td>{{match['dateTimeGMT']| timeformat:offset}}</td>
+        <td>{{match['team-1']}} vs {{match['team-2']}}</td>
+        <td>{{match['type']}}</td>
+    </tr>
+</table>

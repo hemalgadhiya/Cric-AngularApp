@@ -1,0 +1,8 @@
+nav a{
+    text-align: center;
+    padding: 5px 10px;
+    color: rgb(109, 27, 27);
+    display: inline-block;
+    background-color: rgb(192, 142, 142);
+    border-radius:5px;
+}

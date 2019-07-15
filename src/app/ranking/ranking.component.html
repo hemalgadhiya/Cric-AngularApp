@@ -1,0 +1,23 @@
+<h1 style="color: darkgreen;text-align: center">Team Ranking</h1>
+<table id="rank">
+    <tr>
+   
+        <th colspan="2">ODIS</th>
+    </tr>
+    <tr *ngFor="let team of odiRank | keyvalue">
+        <td>{{team.key}}</td>
+        <td>{{team.value}}</td>
+    </tr>
+    
+</table>
+<table id="rank">
+        <tr>
+       
+            <th colspan="2">Test</th>
+        </tr>
+        <tr *ngFor="let team of testRank | keyvalue">
+            <td>{{team.key}}</td>
+            <td>{{team.value}}</td>
+        </tr>
+        
+    </table>

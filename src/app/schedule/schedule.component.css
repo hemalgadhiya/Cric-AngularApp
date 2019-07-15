@@ -1,0 +1,20 @@
+
+#sch{
+    border-collapse: collapse;
+    width: 65%;
+    text-align:center;
+}
+#sch th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color:rgb(11, 85, 134);
+    color: white;
+  }
+#sch td, #sch th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#sch tr:nth-child(even){background-color: #f2f2f2;}
+
+#sch tr:hover {background-color: #ddd;}
