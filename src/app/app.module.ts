@@ -9,6 +9,7 @@ import { DateformatePipe } from './dateformate.pipe';
 import { TimeformatPipe } from './timeformat.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { RankingComponent } from './ranking/ranking.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RankingComponent } from './ranking/ranking.component';
     ScheduleComponent,
     DateformatePipe,
     TimeformatPipe,
-    RankingComponent
+    RankingComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
