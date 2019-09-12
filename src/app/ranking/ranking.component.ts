@@ -14,9 +14,10 @@ export class RankingComponent implements OnInit {
   ngOnInit() {
   }
   
-  odiRank = {1:'England',2:'India',3:'Australia',4:'New Zealand', 5:'SouthAfrica', 6:'Srilanka',7:'Pakistan',8:'Bangladesh', 9:'WestIndies'};
+  odiRank = ['England','India','Australia','New Zealand', 'SouthAfrica', 'Srilanka','Pakistan','Bangladesh', 'WestIndies','Afghanistan'];
+  testRank = ['India','New Zealand','SouthAfrica','England', 'Australia', 'Srilanka','Pakistan','WestIndies', 'Bangladesh','Afghanistan'];
 
-  testRank = {1:'India',2:'New Zealand',3:'SouthAfrica',4:'England', 5:'Australia', 6:'Srilanka',7:'Pakistan',8:'WestIndies', 9:'Bangladesh'};
+  t20Rank = ['Pakistan','England','SouthAfrica','Australia', 'India', 'New Zealand','Afghanistan','Srilanka', 'WestIndies','Bangladesh'];
   
   
 

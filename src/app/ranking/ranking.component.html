@@ -1,23 +1,60 @@
 <h1 style="color: darkgreen;text-align: center">Team Ranking</h1>
-<table id="rank">
-    <tr>
-   
-        <th colspan="2">ODIS</th>
-    </tr>
-    <tr *ngFor="let team of odiRank | keyvalue">
-        <td>{{team.key}}</td>
-        <td>{{team.value}}</td>
-    </tr>
-    
-</table>
-<table id="rank">
-        <tr>
-       
-            <th colspan="2">Test</th>
-        </tr>
-        <tr *ngFor="let team of testRank | keyvalue">
-            <td>{{team.key}}</td>
-            <td>{{team.value}}</td>
-        </tr>
-        
-    </table>
+<div class="container-fluid row">
+    <div class="col" align="center">
+        <table id="rank" >
+            <tr>
+                <th colspan="2" title="One day game format">ODIS</th>
+            </tr>
+            <tr *ngFor="let team of odiRank; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{team}}</td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="col" align="center">
+        <table id="rank">
+                <tr>
+                    <th colspan="2" title="5 Day Game Format">Test</th>
+                </tr>
+                <tr *ngFor="let team of testRank; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{team}}</td>
+                </tr>
+                
+        </table>
+    </div>
+    <div class="col" align="center">>
+        <table id="rank">
+                <tr>
+                    <th colspan="2" title="20 overs game format">T20</th>
+                </tr>
+                <tr *ngFor="let team of t20Rank; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{team}}</td>
+                </tr>
+                    
+        </table>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      One of three columns fasgcvhksdbvdvlabnvb dsbvkbdvnldnv ksdbvhkbkjdh; asdhjhdghbvk ksdvkb
+    </div>
+    <div class="col-sm-4">
+      One of three columns One of three columns fasgcvhksdbvdvlabnvb dsbvkbdvnldnv ksdbvhkbkjdh; asdhjhdghbvk ksdvkb
+    </div>
+    <div class="col-sm-4">
+      One of three columns One of three columns fasgcvhksdbvdvlabnvb dsbvkbdvnldnv ksdbvhkbkjdh; asdhjhdghbvk ksdvkb
+    </div>
+  </div>
+</div>
+
+<div >
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</div>
+

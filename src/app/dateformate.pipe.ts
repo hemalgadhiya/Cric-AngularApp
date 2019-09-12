@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { DatePipe } from '@angular/common';
-import { locale } from 'moment';
 
 @Pipe({
   name: 'dateformate'
@@ -8,7 +7,7 @@ import { locale } from 'moment';
 export class DateformatePipe implements PipeTransform {
  datepipe:DatePipe = new DatePipe('en-US');
 
-  transform(value: string, offset?:number ): String {
+  transform(value: string): String {
     var data = this.datepipe.transform(new Date(value));
     return data
   }
